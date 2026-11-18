@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0c0d">
+  <title>OneDesk · Download</title>
+  <meta name="description" content="OneDesk: one person runs PowerPoint, music and the projector from one console. Download for Windows; Mac test version; phones are the remote.">
+  <link rel="icon" type="image/png" href="icons/favicon.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="top">
+    <img src="icons/icon-192.png" alt="" width="40" height="40">
+    <div>
+      <h1>OneDesk</h1>
+      <p class="dim">一个人掌控投影片、音乐和投影输出 · One person runs slides, music and the projector</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="cards">
+      <article class="card main">
+        <div class="card-h"><h2>Windows</h2><span class="tag" id="ver"></span></div>
+        <p>装在接投影机、运行 PowerPoint 的那台电脑上。<br><span class="dim">Install on the PC that runs PowerPoint and the projector.</span></p>
+        <a class="btn primary" href="https://github.com/Rojakiisme/onedesk/releases/latest/download/OneDesk-Setup-Windows.exe">Download for Windows</a>
+        <ul>
+          <li>Windows 10 / 11 · PowerPoint 2016 or Microsoft 365 · Spotify app (optional, for music)</li>
+          <li>第一次打开时如出现“Windows 已保护你的电脑”：点“更多信息 → 仍要运行”（安装程序没有付费的代码签名）。<br><span class="dim">If Windows shows "Windows protected your PC": More info → Run anyway (the installer is not code-signed).</span></li>
+          <li>双击后没反应或提示无法访问：防毒软件在检查新文件，等几分钟再双击。<br><span class="dim">Nothing happens, or "can't access": antivirus is still checking the new file; try again in a few minutes.</span></li>
+          <li>已经装了旧版：直接安装即可升级，设置会保留。<br><span class="dim">Already installed: just install over it; settings are kept.</span></li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card-h"><h2>Mac</h2><span class="tag warn">测试版 · Test version</span></div>
+        <p>还没有和 PowerPoint 实际测试过，部分功能只有 Windows 版有。<br><span class="dim">Not yet tested with PowerPoint on a Mac; some features are Windows-only.</span></p>
+        <div class="two">
+          <a class="btn" href="https://github.com/Rojakiisme/onedesk/releases/latest/download/OneDesk-Mac-AppleSilicon.dmg">Apple silicon (M1–M4)</a>
+          <a class="btn" href="https://github.com/Rojakiisme/onedesk/releases/latest/download/OneDesk-Mac-Intel.dmg">Intel Mac</a>
+        </div>
+        <ul>
+          <li>第一次打开：在“应用程序”里按住 Control 点 OneDesk → 打开（没有 Apple 签名）。如提示“已损坏”，在“终端”执行 <code>xattr -cr /Applications/OneDesk.app</code>。<br><span class="dim">First start: Control-click OneDesk in Applications → Open (no Apple signature). If it says "damaged", run <code>xattr -cr /Applications/OneDesk.app</code> in Terminal.</span></li>
+          <li>只在 Windows：投影画面实时截取、切换投影模式、加速 PowerPoint 文件、OneDesk Wi-Fi、蓝牙遥控。<br><span class="dim">Windows only: live projector view, display switching, speed-up, OneDesk Wi-Fi, Bluetooth remote.</span></li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card-h"><h2>Phone · tablet</h2><span class="tag ok">不用下载 · No download</span></div>
+        <p>手机和平板是遥控器，用网页打开，不用安装。<br><span class="dim">Phones and tablets are the remote, in the browser; nothing to install.</span></p>
+        <ol>
+          <li>在电脑的 OneDesk 点 <b>Remote</b>，用手机相机扫二维码。<br><span class="dim">On the PC, click <b>Remote</b> in OneDesk and scan the code with the phone's camera.</span></li>
+          <li>再选“加到主屏幕”，以后像 App 一样从图标打开。<br><span class="dim">Then "Add to Home Screen": it opens like an app from then on.</span></li>
+        </ol>
+        <p class="dim">没有 Wi-Fi 时：OneDesk 可以开自己的 Wi-Fi（iPhone 和 Android），或用蓝牙（Android）。<br>No Wi-Fi: OneDesk can open its own Wi-Fi (iPhone and Android), or use Bluetooth (Android).</p>
+        <a class="btn" href="remote/">Bluetooth remote (Android, Chrome)</a>
+      </article>
+    </section>
+
+    <section class="about">
+      <h2>能做什么 · What it does</h2>
+      <ul class="grid">
+        <li><b>投影片 Slides</b> — 开始/结束放映、翻页、黑屏/白屏；看到投影上的画面、下一页、讲者备注、动画步数和计时。Start/end, next/prev, black/white; see the projector, the next slide, notes, builds and timers.</li>
+        <li><b>音乐 Music</b> — 控制 Spotify：播放、切歌、平滑地淡入淡出到指定音量。Spotify: play, skip, smooth fades to any level.</li>
+        <li><b>输出 Output</b> — 切换音响/耳机、系统音量、投影模式。Audio device, system volume, projector mode.</li>
+        <li><b>Cue</b> — 一个按钮执行一串动作，也可以翻到某一页自动执行。One button for a sequence of steps, or automatically at a slide.</li>
+        <li><b>开场前检查 Check</b> — 一个画面看文件、投影机、声音、音乐、手机是否准备好。One screen showing what is ready before the event.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <span id="rel" class="dim"></span>
+    <a href="https://github.com/Rojakiisme/onedesk/releases">All versions</a>
+  </footer>
+
+  <script>
+    // Version and date of the latest release (the download buttons always point at it).
+    fetch('https://api.github.com/repos/Rojakiisme/onedesk/releases/latest')
+      .then((r) => (r.ok ? r.json() : null))
+      .then((j) => {
+        if (!j) return;
+        const v = String(j.tag_name || '').replace(/^v/, '');
+        const d = j.published_at ? new Date(j.published_at).toLocaleDateString() : '';
+        document.getElementById('ver').textContent = v ? `v${v}` : '';
+        document.getElementById('rel').textContent = v ? `Latest: v${v}${d ? ` · ${d}` : ''}` : '';
+      })
+      .catch(() => {});
+  </script>
+</body>
+</html>
