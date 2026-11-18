@@ -34,7 +34,7 @@ function msg(el, text, bad = true) { const m = $(el); m.textContent = text || ''
 async function connect(choose) {
   if (busy) return;
   const pin = $('#pin').value.trim();
-  if (!/^\d{6}$/.test(pin)) { msg('#msg', 'Enter the 6-digit PIN shown on the OneDesk PC.'); return; }
+  if (!/^\d{6}$/.test(pin)) { msg('#msg', 'Enter the 6-digit PIN shown on the OneDesk computer.'); return; }
   store.set('pin', pin);
   busy = true;
   msg('#msg', '');
@@ -59,7 +59,7 @@ async function connect(choose) {
     $('#live').classList.remove('hidden');
     checkPin();
   } catch (e) {
-    if (e.name === 'NotFoundError') msg('#msg', 'No OneDesk PC chosen. On the PC, check that Bluetooth is started (Remote → No Wi-Fi…? → Bluetooth).');
+    if (e.name === 'NotFoundError') msg('#msg', 'No OneDesk computer chosen. On the computer, check that Bluetooth is started (Remote → No Wi-Fi…? → Bluetooth).');
     else msg('#msg', `Could not connect: ${e.message}`);
     setConn('bad', 'Not connected');
     wantConnected = false;
@@ -102,7 +102,7 @@ async function checkPin() {
   await send('hello');
   setTimeout(() => {
     if (state.a === before) {
-      msg('#liveMsg', 'The PC did not accept the PIN. Check the PIN under Remote on the PC.');
+      msg('#liveMsg', 'The computer did not accept the PIN. Check the PIN under Remote on the computer.');
       $('#setup').classList.remove('hidden');
     } else msg('#liveMsg', '');
   }, 1500);
@@ -176,7 +176,7 @@ if (!navigator.bluetooth) {
       device = known;
       device.addEventListener('gattserverdisconnected', onDisconnected);
       const b = $('#reconnect');
-      b.textContent = `Reconnect to ${known.name || 'the OneDesk PC'}`;
+      b.textContent = `Reconnect to ${known.name || 'the OneDesk computer'}`;
       b.classList.remove('hidden');
       b.onclick = () => connect(false);
     }).catch(() => {});

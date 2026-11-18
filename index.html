@@ -35,14 +35,15 @@
 
       <article class="card">
         <div class="card-h"><h2>Mac</h2><span class="tag warn">测试版 · Test version</span></div>
-        <p>还没有和 PowerPoint 实际测试过，部分功能只有 Windows 版有。<br><span class="dim">Not yet tested with PowerPoint on a Mac; some features are Windows-only.</span></p>
+        <p>功能和 Windows 版基本相同，但还没有和真正的 PowerPoint 一起测试过，正式使用前请先试一次。<br><span class="dim">Nearly the same features as on Windows, but not yet tested with PowerPoint on a real Mac: try it before an event.</span></p>
         <div class="two">
-          <a class="btn" href="https://github.com/ngxu/onedesk/releases/latest/download/OneDesk-Mac-AppleSilicon.dmg">Apple silicon (M1–M4)</a>
+          <a class="btn" href="https://github.com/ngxu/onedesk/releases/latest/download/OneDesk-Mac-AppleSilicon.dmg">Apple silicon (M1 and later)</a>
           <a class="btn" href="https://github.com/ngxu/onedesk/releases/latest/download/OneDesk-Mac-Intel.dmg">Intel Mac</a>
         </div>
         <ul>
           <li>第一次打开：在“应用程序”里按住 Control 点 OneDesk → 打开（没有 Apple 签名）。如提示“已损坏”，在“终端”执行 <code>xattr -cr /Applications/OneDesk.app</code>。<br><span class="dim">First start: Control-click OneDesk in Applications → Open (no Apple signature). If it says "damaged", run <code>xattr -cr /Applications/OneDesk.app</code> in Terminal.</span></li>
-          <li>只在 Windows：投影画面实时截取、切换投影模式、加速 PowerPoint 文件、OneDesk Wi-Fi、蓝牙遥控。<br><span class="dim">Windows only: live projector view, display switching, speed-up, OneDesk Wi-Fi, Bluetooth remote.</span></li>
+          <li>投影画面实时截取需要 macOS 14（Sonoma）以上，第一次用时要允许“屏幕录制”。<br><span class="dim">The live projector view needs macOS 14 (Sonoma) or later and the Screen Recording permission.</span></li>
+          <li>和 Windows 不同：投影模式只有同步和延伸（只用投影机时合上盖子）；没有 OneDesk Wi-Fi，改用手机热点；不需要“加速”。<br><span class="dim">Different from Windows: Duplicate and Extend only (close the lid for the projector only); no OneDesk Wi-Fi, use the phone's hotspot; no speed-up needed.</span></li>
         </ul>
       </article>
 
