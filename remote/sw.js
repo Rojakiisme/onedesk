@@ -1,6 +1,6 @@
 // Keeps the remote working without internet once it has been opened: the page and its files are
 // served from the phone's cache, refreshed in the background when there is a connection.
-const CACHE = 'onedesk-bt-remote-v1';
+const CACHE = 'onedesk-bt-remote-v2';
 const FILES = ['./', 'index.html', 'remote.js', 'remote.css', 'manifest.webmanifest', '../icons/favicon.png', '../icons/apple-touch-icon.png', '../icons/icon-192.png', '../icons/icon-512.png'];
 
 self.addEventListener('install', (e) => {
